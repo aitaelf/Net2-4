@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	  <meta charset="UTF-8">
+	  <title>Socket.IO Chat</title>
+	  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+	  <script src="/socket.io/socket.io.js"></script>
+	  <script src="/main.js"></script>
+	</head>
+	<body>
+		<div class="chatArea" style="display:none;">
+			<ul class="messages"></ul>
+			<input class="inputMessage" placeholder="Type here..."/>
+			<button class="messageBut" onclick="sendMessage();">Send</button>
+		</div>
+		<div class="auth" style="display:inline;">
+			<h2 >Your name:</h2>
+			<input class="usernameInput" type="text" maxlength="14" />
+			<button class="authBut" onclick="auth();">Ok</button>
+		</div>
+	</body>
+</html>
